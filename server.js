@@ -22,6 +22,12 @@ app.use('/patient', patientRoute)
 const specialistRoute = require('./routes/specialistRoutes')
 app.use('/specialist', specialistRoute)
 
+const consultationRoute = require('./routes/consutationRoutes')
+app.use('/consultation', consultationRoute)
+
+const appointmentRoute = require('./routes/appointmentRoutes')
+app.use('/appointment', appointmentRoute)
+
 const PORT = process.env.PORT || 2000
 
 app.listen(PORT, () => {

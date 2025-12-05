@@ -8,6 +8,7 @@ const path = require('path')
 // const otpStore = {};
 
 class DoctorController {
+  
   //POST route for doctor signup
   static signup = async (req, res) => {
     try {
